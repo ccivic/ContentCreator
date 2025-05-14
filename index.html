@@ -1,364 +1,348 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effortless Content Creation for Your Business | [Your Business Name]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-color: #ecf0f1;
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .hero-content h2 {
+            font-size: 1.5em;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        /* Problem/Solution Section */
+        #problem-solution {
+            background-color: white;
+        }
+
+        .problem-solution-text {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .problem-solution-text ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .problem-solution-text ul li {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        /* How It Works Section */
+        #how-it-works {
+            background-color: #f9f9f9;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .step {
+            text-align: center;
+            margin: 20px;
+            max-width: 200px;
+        }
+
+        .step span {
+            display: block;
+            font-size: 2em;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        /* Benefits Section */
+        #benefits {
+            background-color: white;
+        }
+
+        .benefits-list {
+            max-width: 600px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        .benefits-list li {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            list-style: none;
+        }
+
+        .benefits-list li::before {
+            content: "✅"; /* You can replace this with an icon */
+            margin-right: 10px;
+            color: #27ae60;
+        }
+
+        /* Sample Output Section */
+        #sample-output {
+            background-color: #ecf0f1;
+        }
+
+        .samples-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .sample-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .sample-card h4 {
+            margin-top: 0;
+            color: #3498db;
+        }
+
+        /* CTA Section */
+        #cta-section {
+            background-color: white;
+            padding: 80px 0;
+        }
+
+        /* FAQ Section */
+        #faq {
+            background-color: #f9f9f9;
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .faq-item dt {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .faq-item dd {
+            margin-left: 0;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #eee;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Effortless Content Creation for Your Business | [Your Business Name]&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 60px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1, h2, h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #3498db;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #2980b9;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Hero Section */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#hero {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ecf0f1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 100px 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-content {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-content h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 3.5em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.2;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-content h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #777;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Problem/Solution Section */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#problem-solution {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.problem-solution-text {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 700px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.problem-solution-text ul {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.problem-solution-text ul li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #3498db;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* How It Works Section */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#how-it-works {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.steps-container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-around;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 30px auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.step {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 200px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.step span {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #3498db;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Benefits Section */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#benefits {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.benefits-list {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 30px auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.benefits-list li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.benefits-list li::before {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>content: "✅"; /* You can replace this with an icon */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #27ae60;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Sample Output Section */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#sample-output {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ecf0f1;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.samples-container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-around;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 30px auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.sample-card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 300px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.sample-card h4 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #3498db;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* CTA Section */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#cta-section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 80px 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* FAQ Section */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#faq {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faq-container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 700px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 30px auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faq-item {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #ddd;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faq-item dt {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.faq-item dd {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Footer */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #eee;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hero-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1&gt;Effortless Content Creation for Your Business&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;Let us write your social posts, blog blurbs, and marketing emails — all tailored to your business and audience. Powered by AI. Delivered with heart.&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#cta-section" class="btn"&gt;🚀 Generate My First Campaign&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="problem-solution"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Struggling to keep up with content? We’ve got you.&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="problem-solution-text"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;You know you need to post online. You know email marketing works. But who has the time to write, edit, and post three times a week?&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;That’s where we come in.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;📱 Instagram &amp; Facebook posts&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;✉️ Customer emails&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;📝 SEO blog blurbs&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;No copywriters. No marketing agency. Just smart content, on demand.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="how-it-works"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Just 4 Simple Steps&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="steps-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;1&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Tell us about your business – Name, goals, audience, tone, and what you want to say.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;2&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;We generate the content – Posts, blog, and email written in seconds.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;3&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;You review &amp; copy – Instantly available for copy/paste or download.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;4&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;You grow – Show up consistently and professionally with zero stress.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="benefits"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Why Business Owners Love Us&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul class="benefits-list"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;🕒 Saves hours every week&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;💬 Speaks in your tone of voice&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;🌱 Grows your online presence&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;🇦🇺 Designed for Aussie businesses&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;🔐 You keep full control of your content&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="sample-output"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;See What We Can Do&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="samples-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="sample-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4&gt;Instagram Post&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;"Got 30 mins today? That’s all you need to declutter your inbox. Book your session now — your future self will thank you."&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;small&gt;(for a productivity coach)&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="sample-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4&gt;Blog Snippet&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;"Choosing the right shade of white paint sounds easy — until you're staring at 37 variations. In today’s post, we’ll share our top 3 picks for Aussie homes and why they work."&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;small&gt;(for a painter/decorator)&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="sample-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4&gt;Marketing Email&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Subject:&lt;/strong&gt; “Time for a tune-up?”&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Hi Sarah, your car’s next service might be closer than you think. Book in this week and get a free tyre check included.”&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;small&gt;(for a mechanic)&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="cta-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Ready to Try It Out?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Generate your first set of content in less than 60 seconds. No signup. No credit card.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="/generate" class="btn"&gt;💡 Generate My Content&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top: 20px; font-size: 0.9em; color: #777;"&gt;(This button would link to the page hosting your MVP)&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="faq"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Frequently Asked Questions&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="faq-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;dl class="faq-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;dt&gt;Q: Is this really AI-generated?&lt;/dt&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;dd&gt;A: Yes! We use advanced AI models trained on millions of examples to create natural, brand-aligned content — customized to your input.&lt;/dd&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/dl&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;dl class="faq-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;dt&gt;Q: Can I edit the content after it’s created?&lt;/dt&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;dd&gt;A: Absolutely. The content is yours to modify, post, and reuse.&lt;/dd&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/dl&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;dl class="faq-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;dt&gt;Q: Do I have to sign up or pay?&lt;/dt&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;dd&gt;A: No. Our MVP is free to use while in beta. Premium options coming soon.&lt;/dd&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/dl&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;dl class="faq-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;dt&gt;Q: Who owns the content?&lt;/dt&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;dd&gt;A: You do. We don’t publish or reuse anything you generate.&lt;/dd&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/dl&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="/about"&gt;About&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="/privacy"&gt;Privacy&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="/contact"&gt;Contact&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top: 10px;"&gt;Powered by 🧠 AI. Built in 🇦🇺 Australia.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="container">
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Effortless Content Creation for Your Business</h1>
+                <h2>Let us write your social posts, blog blurbs, and marketing emails — all tailored to your business and audience. Powered by AI. Delivered with heart.</h2>
+                <a href="#cta-section" class="btn">🚀 Generate My First Campaign</a>
+            </div>
+        </section>
+
+        <section id="problem-solution">
+            <h2>Struggling to keep up with content? We’ve got you.</h2>
+            <div class="problem-solution-text">
+                <p>You know you need to post online. You know email marketing works. But who has the time to write, edit, and post three times a week?</p>
+                <p>That’s where we come in.</p>
+                <ul>
+                    <li>📱 Instagram & Facebook posts</li>
+                    <li>✉️ Customer emails</li>
+                    <li>📝 SEO blog blurbs</li>
+                </ul>
+                <p>No copywriters. No marketing agency. Just smart content, on demand.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>Just 4 Simple Steps</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <span>1</span>
+                    <p>Tell us about your business – Name, goals, audience, tone, and what you want to say.</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <p>We generate the content – Posts, blog, and email written in seconds.</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <p>You review & copy – Instantly available for copy/paste or download.</p>
+                </div>
+                <div class="step">
+                    <span>4</span>
+                    <p>You grow – Show up consistently and professionally with zero stress.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <h2>Why Business Owners Love Us</h2>
+            <ul class="benefits-list">
+                <li>🕒 Saves hours every week</li>
+                <li>💬 Speaks in your tone of voice</li>
+                <li>🌱 Grows your online presence</li>
+                <li>🇦🇺 Designed for Aussie businesses</li>
+                <li>🔐 You keep full control of your content</li>
+            </ul>
+        </section>
+
+        <section id="sample-output">
+            <h2>See What We Can Do</h2>
+            <div class="samples-container">
+                <div class="sample-card">
+                    <h4>Instagram Post</h4>
+                    <p>"Got 30 mins today? That’s all you need to declutter your inbox. Book your session now — your future self will thank you."</p>
+                    <small>(for a productivity coach)</small>
+                </div>
+                <div class="sample-card">
+                    <h4>Blog Snippet</h4>
+                    <p>"Choosing the right shade of white paint sounds easy — until you're staring at 37 variations. In today’s post, we’ll share our top 3 picks for Aussie homes and why they work."</p>
+                    <small>(for a painter/decorator)</small>
+                </div>
+                <div class="sample-card">
+                    <h4>Marketing Email</h4>
+                    <p><strong>Subject:</strong> “Time for a tune-up?”</p>
+                    <p>Hi Sarah, your car’s next service might be closer than you think. Book in this week and get a free tyre check included.”</p>
+                    <small>(for a mechanic)</small>
+                </div>
+                </div>
+        </section>
+
+        <section id="cta-section">
+            <h2>Ready to Try It Out?</h2>
+            <p>Generate your first set of content in less than 60 seconds. No signup. No credit card.</p>
+            <a href="/generate" class="btn">💡 Generate My Content</a>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #777;">(This button would link to the page hosting your MVP)</p>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <dl class="faq-item">
+                    <dt>Q: Is this really AI-generated?</dt>
+                    <dd>A: Yes! We use advanced AI models trained on millions of examples to create natural, brand-aligned content — customized to your input.</dd>
+                </dl>
+                <dl class="faq-item">
+                    <dt>Q: Can I edit the content after it’s created?</dt>
+                    <dd>A: Absolutely. The content is yours to modify, post, and reuse.</dd>
+                </dl>
+                <dl class="faq-item">
+                    <dt>Q: Do I have to sign up or pay?</dt>
+                    <dd>A: No. Our MVP is free to use while in beta. Premium options coming soon.</dd>
+                </dl>
+                <dl class="faq-item">
+                    <dt>Q: Who owns the content?</dt>
+                    <dd>A: You do. We don’t publish or reuse anything you generate.</dd>
+                </dl>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <a href="/about">About</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/contact">Contact</a>
+            <p style="margin-top: 10px;">Powered by 🧠 AI. Built in 🇦🇺 Australia.</p>
+        </div>
+    </footer>
 </body>
 </html>
