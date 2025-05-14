@@ -1,348 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effortless Content Creation for Your Business | [Your Business Name]</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        section {
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        h1, h2, h3 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin-bottom: 30px;
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #2980b9;
-        }
-
-        /* Hero Section */
-        #hero {
-            background-color: #ecf0f1;
-            padding: 100px 0;
-        }
-
-        .hero-content {
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5em;
-            line-height: 1.2;
-            margin-bottom: 15px;
-        }
-
-        .hero-content h2 {
-            font-size: 1.5em;
-            color: #777;
-            margin-bottom: 30px;
-        }
-
-        /* Problem/Solution Section */
-        #problem-solution {
-            background-color: white;
-        }
-
-        .problem-solution-text {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .problem-solution-text ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .problem-solution-text ul li {
-            margin-bottom: 10px;
-            font-weight: bold;
-            color: #3498db;
-        }
-
-        /* How It Works Section */
-        #how-it-works {
-            background-color: #f9f9f9;
-        }
-
-        .steps-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            max-width: 900px;
-            margin: 30px auto;
-        }
-
-        .step {
-            text-align: center;
-            margin: 20px;
-            max-width: 200px;
-        }
-
-        .step span {
-            display: block;
-            font-size: 2em;
-            color: #3498db;
-            margin-bottom: 10px;
-        }
-
-        /* Benefits Section */
-        #benefits {
-            background-color: white;
-        }
-
-        .benefits-list {
-            max-width: 600px;
-            margin: 30px auto;
-            text-align: left;
-        }
-
-        .benefits-list li {
-            font-size: 1.1em;
-            margin-bottom: 15px;
-            list-style: none;
-        }
-
-        .benefits-list li::before {
-            content: "✅"; /* You can replace this with an icon */
-            margin-right: 10px;
-            color: #27ae60;
-        }
-
-        /* Sample Output Section */
-        #sample-output {
-            background-color: #ecf0f1;
-        }
-
-        .samples-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            max-width: 900px;
-            margin: 30px auto;
-        }
-
-        .sample-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            max-width: 300px;
-            text-align: left;
-        }
-
-        .sample-card h4 {
-            margin-top: 0;
-            color: #3498db;
-        }
-
-        /* CTA Section */
-        #cta-section {
-            background-color: white;
-            padding: 80px 0;
-        }
-
-        /* FAQ Section */
-        #faq {
-            background-color: #f9f9f9;
-        }
-
-        .faq-container {
-            max-width: 700px;
-            margin: 30px auto;
-            text-align: left;
-        }
-
-        .faq-item {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 15px;
-        }
-
-        .faq-item dt {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-
-        .faq-item dd {
-            margin-left: 0;
-            color: #555;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9em;
-        }
-
-        footer a {
-            color: #eee;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Effortless Content Creation for Your Business</title>
+  <!-- Google Fonts for styling -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      background: #f5f5f5;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    h1, h2, h4 {
+      margin: 0 0 20px;
+    }
+    p {
+      margin: 0 0 20px;
+    }
+    section, footer {
+      background: #fff;
+      padding: 60px 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: #007BFF;
+      color: #fff;
+      border-radius: 0;
+      margin-bottom: 0;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .cta-button {
+      background: #ffc107;
+      border: none;
+      color: #222;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #e0a800;
+    }
+    
+    /* Section titles */
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    
+    /* Problem/Solution Section */
+    .problem-solution {
+      text-align: center;
+    }
+    .problem-solution ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+    .problem-solution ul li {
+      margin: 8px 0;
+    }
+    
+    /* How It Works Section */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .step {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      max-width: 600px;
+    }
+    .step-icon {
+      background: #007BFF;
+      color: #fff;
+      font-size: 2rem;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .step p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    
+    /* Benefits Section */
+    .benefits-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #e9f5fa;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 1rem;
+    }
+    
+    /* Sample Output Section */
+    .samples {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .sample {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 350px;
+    }
+    .sample h4 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+    .sample p {
+      font-size: 1rem;
+    }
+    
+    /* FAQ Section */
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+    .faq-item p {
+      font-size: 1rem;
+      margin: 0;
+    }
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 40px 20px;
+    }
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .step {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Hero Section -->
+  <header class="hero">
     <div class="container">
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Effortless Content Creation for Your Business</h1>
-                <h2>Let us write your social posts, blog blurbs, and marketing emails — all tailored to your business and audience. Powered by AI. Delivered with heart.</h2>
-                <a href="#cta-section" class="btn">🚀 Generate My First Campaign</a>
-            </div>
-        </section>
-
-        <section id="problem-solution">
-            <h2>Struggling to keep up with content? We’ve got you.</h2>
-            <div class="problem-solution-text">
-                <p>You know you need to post online. You know email marketing works. But who has the time to write, edit, and post three times a week?</p>
-                <p>That’s where we come in.</p>
-                <ul>
-                    <li>📱 Instagram & Facebook posts</li>
-                    <li>✉️ Customer emails</li>
-                    <li>📝 SEO blog blurbs</li>
-                </ul>
-                <p>No copywriters. No marketing agency. Just smart content, on demand.</p>
-            </div>
-        </section>
-
-        <section id="how-it-works">
-            <h2>Just 4 Simple Steps</h2>
-            <div class="steps-container">
-                <div class="step">
-                    <span>1</span>
-                    <p>Tell us about your business – Name, goals, audience, tone, and what you want to say.</p>
-                </div>
-                <div class="step">
-                    <span>2</span>
-                    <p>We generate the content – Posts, blog, and email written in seconds.</p>
-                </div>
-                <div class="step">
-                    <span>3</span>
-                    <p>You review & copy – Instantly available for copy/paste or download.</p>
-                </div>
-                <div class="step">
-                    <span>4</span>
-                    <p>You grow – Show up consistently and professionally with zero stress.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="benefits">
-            <h2>Why Business Owners Love Us</h2>
-            <ul class="benefits-list">
-                <li>🕒 Saves hours every week</li>
-                <li>💬 Speaks in your tone of voice</li>
-                <li>🌱 Grows your online presence</li>
-                <li>🇦🇺 Designed for Aussie businesses</li>
-                <li>🔐 You keep full control of your content</li>
-            </ul>
-        </section>
-
-        <section id="sample-output">
-            <h2>See What We Can Do</h2>
-            <div class="samples-container">
-                <div class="sample-card">
-                    <h4>Instagram Post</h4>
-                    <p>"Got 30 mins today? That’s all you need to declutter your inbox. Book your session now — your future self will thank you."</p>
-                    <small>(for a productivity coach)</small>
-                </div>
-                <div class="sample-card">
-                    <h4>Blog Snippet</h4>
-                    <p>"Choosing the right shade of white paint sounds easy — until you're staring at 37 variations. In today’s post, we’ll share our top 3 picks for Aussie homes and why they work."</p>
-                    <small>(for a painter/decorator)</small>
-                </div>
-                <div class="sample-card">
-                    <h4>Marketing Email</h4>
-                    <p><strong>Subject:</strong> “Time for a tune-up?”</p>
-                    <p>Hi Sarah, your car’s next service might be closer than you think. Book in this week and get a free tyre check included.”</p>
-                    <small>(for a mechanic)</small>
-                </div>
-                </div>
-        </section>
-
-        <section id="cta-section">
-            <h2>Ready to Try It Out?</h2>
-            <p>Generate your first set of content in less than 60 seconds. No signup. No credit card.</p>
-            <a href="/generate" class="btn">💡 Generate My Content</a>
-            <p style="margin-top: 20px; font-size: 0.9em; color: #777;">(This button would link to the page hosting your MVP)</p>
-        </section>
-
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <dl class="faq-item">
-                    <dt>Q: Is this really AI-generated?</dt>
-                    <dd>A: Yes! We use advanced AI models trained on millions of examples to create natural, brand-aligned content — customized to your input.</dd>
-                </dl>
-                <dl class="faq-item">
-                    <dt>Q: Can I edit the content after it’s created?</dt>
-                    <dd>A: Absolutely. The content is yours to modify, post, and reuse.</dd>
-                </dl>
-                <dl class="faq-item">
-                    <dt>Q: Do I have to sign up or pay?</dt>
-                    <dd>A: No. Our MVP is free to use while in beta. Premium options coming soon.</dd>
-                </dl>
-                <dl class="faq-item">
-                    <dt>Q: Who owns the content?</dt>
-                    <dd>A: You do. We don’t publish or reuse anything you generate.</dd>
-                </dl>
-            </div>
-        </section>
+      <h1>Effortless Content Creation for Your Business</h1>
+      <p>Let us write your social posts, blog blurbs, and marketing emails — all tailored to your business and audience. Powered by AI. Delivered with heart.</p>
+      <button class="cta-button">🚀 Generate My First Campaign</button>
     </div>
+  </header>
 
-    <footer>
-        <div class="container">
-            <a href="/about">About</a>
-            <a href="/privacy">Privacy</a>
-            <a href="/contact">Contact</a>
-            <p style="margin-top: 10px;">Powered by 🧠 AI. Built in 🇦🇺 Australia.</p>
+  <div class="container">
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution">
+      <h2>Struggling to keep up with content? We’ve got you.</h2>
+      <p>You know you need to post online. You know email marketing works. But who has the time to write, edit, and post three times a week?</p>
+      <p>That’s where we come in.</p>
+      <ul>
+        <li>📱 Instagram & Facebook posts</li>
+        <li>✉️ Customer emails</li>
+        <li>📝 SEO blog blurbs</li>
+      </ul>
+      <p>No copywriters. No marketing agency. Just smart content, on demand.</p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section>
+      <div class="section-title">
+        <h2>Just 4 Simple Steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">1</div>
+          <p>Tell us about your business – Name, goals, audience, tone, and what you want to say.</p>
         </div>
-    </footer>
+        <div class="step">
+          <div class="step-icon">2</div>
+          <p>We generate the content – Posts, blog, and email written in seconds.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">3</div>
+          <p>You review & copy – Instantly available for copy/paste or download.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">4</div>
+          <p>You grow – Show up consistently and professionally with zero stress.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section>
+      <div class="section-title">
+        <h2>Why Business Owners Love Us</h2>
+      </div>
+      <div class="benefits-list">
+        <div class="benefit-item">🕒 Saves hours every week</div>
+        <div class="benefit-item">💬 Speaks in your tone of voice</div>
+        <div class="benefit-item">🌱 Grows your online presence</div>
+        <div class="benefit-item">🇦🇺 Designed for Aussie businesses</div>
+        <div class="benefit-item">🔐 You keep full control of your content</div>
+      </div>
+    </section>
+
+    <!-- Sample Output Section -->
+    <section>
+      <div class="section-title">
+        <h2>See What We Can Do</h2>
+      </div>
+      <div class="samples">
+        <div class="sample">
+          <h4>Instagram Post (Productivity Coach)</h4>
+          <p>“Got 30 mins today? That’s all you need to declutter your inbox. Book your session now — your future self will thank you.”</p>
+        </div>
+        <div class="sample">
+          <h4>Blog Snippet (Painter/Decorator)</h4>
+          <p>“Choosing the right shade of white paint sounds easy — until you're staring at 37 variations. In today’s post, we’ll share our top 3 picks for Aussie homes and why they work.”</p>
+        </div>
+        <div class="sample">
+          <h4>Marketing Email (Mechanic)</h4>
+          <p>
+            <strong>Subject:</strong> Time for a tune-up?<br />
+            Hi Sarah, your car’s next service might be closer than you think. Book in this week and get a free tyre check included.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="problem-solution">
+      <h2>Ready to Try It Out?</h2>
+      <p>Generate your first set of content in less than 60 seconds. No signup. No credit card.</p>
+      <button class="cta-button">💡 Generate My Content</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-item">
+        <h4>Q: Is this really AI-generated?</h4>
+        <p>A: Yes! We use advanced AI models trained on millions of examples to create natural, brand-aligned content — customized to your input.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Q: Can I edit the content after it’s created?</h4>
+        <p>A: Absolutely. The content is yours to modify, post, and reuse.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Q: Do I have to sign up or pay?</h4>
+        <p>A: No. Our MVP is free to use while in beta. Premium options coming soon.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Q: Who owns the content?</h4>
+        <p>A: You do. We don’t publish or reuse anything you generate.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="#about">About</a> | <a href="#privacy">Privacy</a> | <a href="#contact">Contact</a>
+    </p>
+    <p>Powered by 🧠 AI. Built in 🇦🇺 Australia.</p>
+  </footer>
 </body>
 </html>
