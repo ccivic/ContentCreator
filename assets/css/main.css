@@ -1247,7 +1247,7 @@ input, select, textarea {
 		}
 
 			header p strong {
-				color: #73aed3;
+				color: #404248;
 				font-weight: 800;
 			}
 
@@ -1394,6 +1394,7 @@ input, select, textarea {
 			left: 0;
 			top: 0;
 			background: url("images/bg01.png");
+			z-index: 0;
 			width: 100%;
 			height: 100%;
 			opacity: 0.75;
