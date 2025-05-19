@@ -1447,7 +1447,7 @@ input, select, textarea {
 		border-radius: 8px;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.35);
 		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
-		color: #fff !important;
+		color: #5d7bd5 !important;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 800;
